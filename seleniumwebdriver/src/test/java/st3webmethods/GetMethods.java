@@ -31,8 +31,9 @@ public class GetMethods {
 		
 		Set<String> windowid =driver.getWindowHandles();
 		System.out.println(windowid);
+		
+		//Driver focus on first window unless switch command is used.
 		driver.close();
-
 
 		
 		
