@@ -25,6 +25,8 @@ public class ConditionalMethod {
 		
 		WebElement checkbox = driver.findElement(By.id("Newsletter"));
 		System.out.println("CHECKBOX IS Selected : " + checkbox.isSelected());
+		
+		
 
 
 		
