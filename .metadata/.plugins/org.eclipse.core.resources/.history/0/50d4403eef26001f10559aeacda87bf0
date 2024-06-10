@@ -1,0 +1,10 @@
+package st3webmethods;
+
+public class GetMothods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

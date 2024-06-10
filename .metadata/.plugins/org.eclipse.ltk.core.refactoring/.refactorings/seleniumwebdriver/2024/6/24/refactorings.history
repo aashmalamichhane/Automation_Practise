@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;st3webmethods.GetMothods&apos; to &apos;GetMethods&apos;&#x0D;&#x0A;- Original project: &apos;seleniumwebdriver&apos;&#x0D;&#x0A;- Original element: &apos;st3webmethods.GetMothods&apos;&#x0D;&#x0A;- Renamed element: &apos;st3webmethods.GetMethods&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GetMothods&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;st3webmethods{GetMothods.java[GetMothods" matchStrategy="1" name="GetMethods" qualified="false" references="true" similarDeclarations="false" stamp="1718009097775" textual="false" version="1.0"/>
+</session>
