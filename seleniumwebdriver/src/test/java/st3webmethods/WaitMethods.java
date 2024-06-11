@@ -1,12 +1,12 @@
 package st3webmethods;
 
+import com.google.common.base.Function;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
 
@@ -36,6 +36,25 @@ public class WaitMethods {
 
 		WebElement loginbtn = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()=\"Login\"]")));
 		loginbtn.click();
+		driver.close();
+
+
+		//FluentWaits rarely used
+//		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//		driver.manage().window().maximize();
+//		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver)
+//				.withTimeout(Duration.ofSeconds(30))
+//				.pollingEvery(Duration.ofSeconds(5))
+//				.ignoring(NoSuchElementException.class);
+//
+//		WebElement usernametext = wait1.until(new Function<WebDriver, WebElement>() { //arrow Function
+//			public WebElement apply(WebDriver driver) {
+//				return driver.findElement(By.xpath("//input[@placeholder=\"Username\"]"));
+//			}
+//		});
+//			usernametext.sendKeys("Admin");
+
+
 
 
 
