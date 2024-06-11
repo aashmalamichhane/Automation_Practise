@@ -8,7 +8,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
 public class HandleBrowserWindow {
 
     public static void main(String args[])  {
@@ -25,18 +24,30 @@ public class HandleBrowserWindow {
 
        //Approach1 -- Converting  set collection into list to get individual id
 
-        List<String> windowList = new ArrayList(windowsIDs);
-        String parentID= windowList.get(0);
-        String childID= windowList.get(1);
+//        List<String> windowList = new ArrayList(windowsIDs);
+//        String parentID= windowList.get(0);
+//        String childID= windowList.get(1);
+//
+//        //switch to child window
+//        driver.switchTo().window(childID);
+//        System.out.println(driver.getTitle());
+//
+//        //switch to parent window
+//        driver.switchTo().window(parentID);
+//        System.out.println(driver.getTitle());
 
-        //switch to child window
-        driver.switchTo().window(childID);
-        System.out.println(driver.getTitle());
 
-        //switch to parent window
-        driver.switchTo().window(parentID);
-        System.out.println(driver.getTitle());
+        //Approach1 -- Converting  set collection  using loop if there are multiple tabs
+         for (String winId:windowsIDs)
+         {
+             String title = driver.switchTo().window(winId).getTitle();
 
+             if(title.equals("OrangeHRM"))
+             {
+                 System.out.println(driver.getCurrentUrl());
+                 //then write operation you want to perform on this window
+             }
+         }
 
     }
 }
