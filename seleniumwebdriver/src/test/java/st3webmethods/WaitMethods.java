@@ -54,11 +54,6 @@ public class WaitMethods {
 //		});
 //			usernametext.sendKeys("Admin");
 
-
-
-
-
-
 	}
 
 }
