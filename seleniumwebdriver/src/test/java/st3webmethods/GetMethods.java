@@ -35,35 +35,6 @@ public class GetMethods {
 		//Driver focus on first window unless switch command is used.
 		driver.close();
 
-		
-		
-
-		
-	
-		
 	}
 
 }
-
-//currentURL = driver.current_url
-//print("The current url of the webpage is : " + currentURL)
-//
-//driver.refresh()
-//print("Driver is rereshed 1st time")
-//
-//driver.get("https://www.letskodeit.com/login")
-//driver.back()
-//print("One step back is gone")
-//
-//currentURL = driver.current_url
-//print("The current url of the webpage is again : " + currentURL)
-//
-//driver.forward()
-//print("One step forward")
-//
-//currentURL = driver.current_url
-//print("The current url of the webpage is againnnn : " + currentURL)
-//
-//pageSource = driver.page_source
-//
-//driver.close()
