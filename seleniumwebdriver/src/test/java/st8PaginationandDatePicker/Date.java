@@ -27,15 +27,12 @@ public class Date {
 
 
         //Using date picker
-
-
         String year = "2025";
         String month = "September";
         String date =  "12";
         driver.findElement(By.id("datepicker")).click();
 
         //select month and year
-
         while (true) {
             String curMonth = driver.findElement(By.xpath("//span[@class=\"ui-datepicker-month\"]")).getText();
             String curYear = driver.findElement(By.xpath("//span[@class=\"ui-datepicker-year\"]")).getText();
