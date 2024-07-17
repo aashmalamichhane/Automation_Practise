@@ -32,7 +32,7 @@ public class KeyboardActionOpenLinkNeTab {
         driver.findElement(By.xpath("//input[@placeholder=\"Please enter your phone number\"]")).sendKeys("90909000");
 
 
-        //To open new TAB of differen URL
+        //To open new TAB of different URL
         driver.switchTo().newWindow(WindowType.TAB);
         driver.get("https://www.orangehrm.com/");
 
