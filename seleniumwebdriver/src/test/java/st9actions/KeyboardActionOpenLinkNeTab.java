@@ -7,6 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class KeyboardActionOpenLinkNeTab {
 
@@ -23,7 +24,11 @@ public class KeyboardActionOpenLinkNeTab {
         act.keyDown(Keys.CONTROL).click(logLink).keyDown(Keys.CONTROL).perform();
 
         //switchingg to registration page-child page
-        List<String> ids = new ArrayList<>(driver.getWindowHandles());
+
+        Set<String> windowsId = driver.getWindowHandles();
+
+        //To convert set to the list , pass the set in Array List Constructor
+        List<String> ids = new ArrayList<>(windowsId);
 
         //REGISTRATION PAGE
         driver.switchTo().window(ids.get(1));

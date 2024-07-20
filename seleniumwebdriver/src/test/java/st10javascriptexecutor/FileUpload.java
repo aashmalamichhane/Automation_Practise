@@ -11,7 +11,7 @@ public class FileUpload {
         driver.get("https://davidwalsh.name/demo/multiple-file-upload.php");
         driver.manage().window().maximize();
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
 
         //Single File Upload
         String currPath = System.getProperty("user.dir");
